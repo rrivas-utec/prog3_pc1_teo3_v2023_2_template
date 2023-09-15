@@ -22,7 +22,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Update ubuntu
-      run: apt-get update
+      run: sudo apt-get update
 
     - name: Install tbb
       run: sudo apt-get install libtbb-dev

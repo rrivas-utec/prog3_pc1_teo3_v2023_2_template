@@ -27,17 +27,16 @@ Proporcionar el método `is_valid` que valide si la disposición actual del tabl
 
 Consejos:
 - Recuerde gestionar la memoria de manera eficiente utilizando `new` para la asignación y `delete[]` para la liberación, evitando así potenciales fugas de memoria.
-- Para el cálculo del total de cada regla, mencionada en el parrafo anterior, utilizar la siguiente formula:
+- Para el cálculo del total esperado de cada regla, mencionada en el parrafo anterior, utilizar la siguiente formula:
   ```
-    suma = ([valor inicial] + [valor final]) * [cantidad de terminos] / 2
+    [total esperado] = ([valor inicial] + [valor final]) * [cantidad de terminos] / 2
   
     ejemplo:
       si el rango de valores validos del sudoku esta entre 1 y 9
-      suma = (1 + 9) * 9 / 2 = 45
+      [total esperado] = (1 + 9) * 9 / 2 = 45
   
-      si el rango de valores validos del sudoku esta entre 'A'(65)' y 'D'(68)
-      suma = (65 + 68) * 4 / 2 = 266
-  
+      si el rango de valores validos del sudoku esta entre 'A'(65) y 'D'(68)
+      [total esperado] = (65 + 68) * 4 / 2 = 266
   ```
 
 **Use Case #1:**
